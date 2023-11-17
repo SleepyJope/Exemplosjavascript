@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo 14</h1>
+
+
+
+<label for="box">Adicionar botão</label>
+<input type="checkbox" onclick="check()" name="" id="box">
+<input type="button" id="button" value="Não faça isso" style="display: none;">
+
+<script>
+    function check(){
+    let marcado = document.getElementById("box").checked;
+    console.log(marcado);
+    if(marcado)
+        document.getElementById("button").style.display="block"
+        
+        else
+        document.getElementById("button").style.display="none"
+
+    }
+</script>
+
+</body>
+</html>
