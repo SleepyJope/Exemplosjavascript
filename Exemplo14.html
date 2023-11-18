@@ -18,13 +18,31 @@
     function check(){
     let marcado = document.getElementById("box").checked;
     console.log(marcado);
+
+    let bot = document.getElementById("button");
+    
+    bot.addEventListener("click", img())
+        function img(){
+            let divi = document.createElement("div");
+            let image = document.createElement("img");  
+            image.src = "./imgs/luffyteste.jpg";
+            divi.appendChild(image);
+            document.body.appendChild(divi);
+         }
+
     if(marcado)
-        document.getElementById("button").style.display="block"
+        bot.style.display="block"
         
         else
-        document.getElementById("button").style.display="none"
+        bot.style.display="none"
 
+
+        document.getElementsByTagName("img")[0].addEventListener("click", function (){
+            
+
+        })
     }
+    
 </script>
 
 </body>
