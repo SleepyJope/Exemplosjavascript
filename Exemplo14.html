@@ -22,13 +22,7 @@
     let bot = document.getElementById("button");
     
     bot.addEventListener("click", img())
-        function img(){
-            let divi = document.createElement("div");
-            let image = document.createElement("img");  
-            image.src = "./imgs/luffyteste.jpg";
-            divi.appendChild(image);
-            document.body.appendChild(divi);
-         }
+        
 
     if(marcado)
         bot.style.display="block"
@@ -41,6 +35,14 @@
             
 
         })
+
+        function img(){
+            let divi = document.createElement("div");
+            let image = document.createElement("img");  
+            image.src = "./imgs/luffyteste.jpg";
+            divi.appendChild(image);
+            document.body.appendChild(divi);
+         }
     }
     
 </script>
