@@ -21,12 +21,12 @@
 
     let bot = document.getElementById("button");
     
-    bot.addEventListener("click", img())
         
 
-    if(marcado)
+    if(marcado){
         bot.style.display="block"
-        
+        bot.addEventListener("click", img())
+    }
         else
         bot.style.display="none"
 
